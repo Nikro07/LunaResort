@@ -1,0 +1,144 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title> LaLunaHome </title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="stylesheet" href="Luna.css">
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>
+</head>
+<body id="top">
+        <h1 class = "headtext">Luna Vista Resort</h1>
+        <h3 class = "headtext3">Bulacan </h3>  
+
+    <header class = "head">
+    <div class = "centered">
+
+<div class="headtbox"><a href="#mne"><h3 class="headtext2">Meetings & Events</h3></a></div>
+<div class="headtbox"><a href="#accom"><h3 class="headtext2">Accommodation</h3></a></div>
+<div class="headtbox"><a href="#gallery"><h3 class="headtext2">Gallery</h3></a></div>
+<div class="headtbox"><a href="#ttd"><h3 class="headtext2">Things To Do</h3></a></div>
+<div class="headtbox"><a href="#about"><h3 class="headtext2">About & Contact</h3></a></div>
+</div>
+
+<div class="mega-menu" id="megaMenu"></div>
+
+<div class="footer-book">
+  <a href="#top">
+    <div class="bookbtn">Book Now</div>
+  </a>
+</div>
+    </header>
+
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src = "Slider/Resort1.jpg"> </div>
+      <div class="swiper-slide"> <img src = "Slider/Resort2.jpg"> </div>
+      <div class="swiper-slide"> <img src = "Slider/Resort3.jpg"> </div>
+      <div class="swiper-slide"> <img src = "Slider/Resort4.jpg"> </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>    
+
+  </div>
+
+<div class="parent">
+  <div class="content">
+
+    <section id="mne" class="section">
+      <h1>Meetings & Events</h1>
+      <p>Host unforgettable weddings, corporate events, and private celebrations in our luxury resort spaces.</p>
+    </section>
+
+    <section id="accom" class="section">
+      <h1>Accommodation</h1>
+      <p>Choose from deluxe rooms, suites, and private villas designed for comfort and elegance.</p>
+    </section>
+
+    <section id="gallery" class="section">
+      <h1>Gallery</h1>
+      <p>Explore breathtaking views, stunning interiors, and unforgettable moments at Luna Vista Resort.</p>
+    </section>
+
+    <section id="ttd" class="section">
+      <h1>Things To Do</h1>
+      <p>Enjoy swimming pools, spa treatments, and outdoor adventures during your stay.</p>
+    </section>
+
+    <section id="about" class="section">
+      <h1>About & Contact</h1>
+      <p>Learn more about Luna Vista Resort and get in touch for reservations and inquiries.</p>
+    </section>
+
+  </div>
+</div>
+
+
+
+
+<div class = "parent">
+    <div style = "margin-top: 10px; height: 800px; width: 95%; border: 1px solid black;">
+<div class="hero">
+  <video autoplay muted loop class="hero-video">
+    <source src="Slider/Resort1.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay">
+    <h2>Book Your Stay</h2>
+
+    <label>Check-in</label>
+    <input type="date" id="checkin">
+
+    <label>Check-out</label>
+    <input type="date" id="checkout">
+
+    <label>Room Type</label>
+    <select id="roomType">
+      <option value="">Select Room</option>
+      <option value="Deluxe">Deluxe</option>
+      <option value="Suite">Suite</option>
+      <option value="Villa">Villa</option>
+    </select>
+
+    <label>Amenities</label>
+    <select id="amenities">
+      <option value="">Select Amenities</option>
+      <option value="Pool">Pool Access</option>
+      <option value="Spa">Spa</option>
+      <option value="Breakfast">Breakfast Included</option>
+    </select>
+
+    <button onclick="bookNow()">Check-in Online</button>
+
+    <p id="booking-status"></p>
+  </div>
+</div>
+
+    </div>
+</div>
+
+
+<script src="menu.js"></script>
+</body>
+
+</html>
